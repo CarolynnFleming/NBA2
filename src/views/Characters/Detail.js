@@ -5,7 +5,7 @@ import React from 'react'
 
 export default function Detail() {
 
-    const [rM, setRM] = useStat({});
+    const [rM, setRM] = useState({});
     const [loading, setLoading] = useState(true);
     const { id } = useParams();
 
