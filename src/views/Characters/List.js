@@ -7,6 +7,10 @@ export default function List() {
     const gender = new URLSearchParams(location.search).get('gender') ?? 'all';
     const [gods, setGods] = useState([]);
     const [computing, setComputing] = useState(true);
+
+    const genderChange = (event) => {
+        history.pushState(`/?gender=${event.target.value}`);
+    };
   return (
     <div>List</div>
   )
